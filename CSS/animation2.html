@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/023/842/246/small_2x/boy-cartoon-character-cute-funny-illustration-eps-10-free-vector.jpg');
+            background-size: cover;
+            position: relative;
+            top: 200px;
+            left: 200px;
+            animation-name: proanime;
+            animation-timing-function:cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation-duration: 1s;
+            animation-delay: .1s;
+            animation-iteration-count: 5;
+            animation-direction:alternate ;
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            /* transform: rotate(45deg); */
+            /* transform: rotateX(45deg);
+            transform: rotateY(45deg); 
+            transform: rotateZ(45deg); */
+            /* transform: scale(.5, 1); */
+        }
+        div:hover {
+            /* background-color: aqua; */
+            /* transition: all 2s ease-in; */
+            /* font-size: 20px; */
+            /* transform: rotateZ(360deg); */
+            /* transform: translate(200px, 200px); */
+            /* transform: scale(2); */
+            /* scale: 2;
+            translate: 200px;
+            rotate: 20deg;    */
+            /* transform: skew(190deg); */
+            /* transform: scale(2) rotate(20deg) translate(200px) skew(200deg); */
+        }
+        div:active{
+            background-color: white;
+        }
+        @keyframes proanime{
+            from{
+                /* position: relative; */
+                top: 20px;
+                left: 20px;
+            }
+            to{
+                top: 200px;
+                left: 200px;
+            }
+        }
+        @media(max-width: 300px){
+            div{
+                background-color: green;
+            }
+        }
+        @media(min-width: 300px) and (max-width: 400px) {
+            div{
+                background-color: pink;
+            }
+        }
+        @media(min-width: 400px) and (max-width: 600px) {
+            div{
+                background-color: red;
+            }
+        }   
+    </style>
+</head>
+<body>
+    <div>BOX 1</div>    
+</body>
+</html>

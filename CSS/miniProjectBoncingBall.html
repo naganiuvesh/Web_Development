@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .floor{
+            width: 100%;
+            border: 2px solid black;
+            position: absolute;
+            top: 450px;
+        }
+        .perent{
+            animation: move 4s linear infinite;
+            height: 60px;
+            width: 60px;
+            position: absolute;
+            top: 440px;
+            left: -60px;
+            /* background-color: red; */
+        }
+        .child{
+            background-color: #ff4757;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            animation: ballbouns 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335) infinite alternate;
+        }
+
+        @keyframes ballbouns {
+            0%{
+               transform: translateY(-150px);
+            }
+            100%{
+                transform: translateX(0px);
+                scale: 1.1 0.8;
+            }
+        }
+        @keyframes move{
+            0%{
+                top: 440px;
+                left: -60px;
+            }
+            100%{
+                top: 440px;
+                left: 1500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floor"></div>
+    <div class="perent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

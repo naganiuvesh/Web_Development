@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px dotted black;
+            height: 90px;
+            width: 50px;
+            padding: 20px;
+            margin: 20px;
+            background-color: red;
+            animation: bouns 2s ease-out infinite alternate;
+        }
+        #box1{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            text-align: center;
+            background-color: pink;
+        }
+        @keyframes bouns{
+            0%{
+                transform: translateY(-150px);
+            }
+            100%{
+                transform: translate(0px);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">hi</div>
+    <div id="box1">hi</div>
+    <div id="box1">hi</div>
+</body>
+</html>
